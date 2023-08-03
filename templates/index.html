@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS to center the spinner */
+        .spinner-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="text-center mb-4">Stock Prediction</h1>
+                        <form action="/" method="post">
+                            <div class="mb-3">
+                                <label for="stock_symbol" class="form-label">Enter Stock Symbol:</label>
+                                <input type="text" class="form-control" id="stock_symbol" name="stock_symbol" required>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary">Analyze Stock</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
